@@ -223,11 +223,11 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="👥 Support Group",
-                                url=f"https://t.me/{SUPPORT_CHAT}",
+                                url=f"https://t.me/eztee_chat",
                             ),
                             InlineKeyboardButton(
                                 text="📌 Updates Channel",
-                                url="https://t.me/Infinity_BOTs",
+                                url="https://t.me/eztee_youtube",
                             ),
                         ],
                         [
@@ -240,7 +240,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "ඇහරිල ඉන්නෙ😌!\n<b>නිදාගත්තෙ නෑ</b> <code>{}</code> <b>කින්.</b>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
