@@ -97,7 +97,7 @@ I'm a group management bot, here to help you get around and keep the order in yo
 
 SAITAMA_IMG = "https://telegra.ph/file/af86973849bc43cc8e3ce.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate for developer. This bot runs on heroku so bot slow down some times and developer cannot add more modules due to heroku can't run them.\n\nBetter if my developer recieved a VPS to run the bot. Contact him and help him to continue this.\n\nDeveloper: [@ImJanindu](t.me/imjanindu)"""
+DONATE_STRING = """Heya, glad to hear you want to donate for developer. This bot runs on heroku so bot slow down some times and developer cannot add more modules due to heroku can't run them.\n\nBetter if my developer recieved a VPS to run the bot. Contact him and help him to continue this.\n\nDeveloper: [@Tikka_bro](t.me/tikka_bro)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -214,7 +214,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="➕ Add Kawee to your Group",
+                                text="➕ Add Ez.Tee to your Group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
