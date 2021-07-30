@@ -37,9 +37,9 @@ async def download_video(v_url):
     me = await lazy.client.get_me()
 
     if not sender.id == me.id:
-        rkp = await lazy.reply("Processing 😌")
+        rkp = await lazy.reply("<b>Processing 😌</b>/n<b>ටිකක් ඉන්ඩෝ😌</b>")
     else:
-        rkp = await lazy.edit("Processing 😌")
+        rkp = await lazy.edit("Processing 😌/n<b>ටිකක් ඉන්ඩෝ😌</b>")
     url = v_url.pattern_match.group(1)
     if not url:
         return await rkp.edit("`Error \nusage song <song name>`")
@@ -50,9 +50,9 @@ async def download_video(v_url):
     try:
         url = q[0]["link"]
     except:
-        return await rkp.edit("Failed to find 😒")
+        return await rkp.edit("Failed to find 😒/n<b>හොයාගන්න නෑනෙ</b>")
     type = "audio"
-    await rkp.edit("Preparing to download 🥺")
+    await rkp.edit("Preparing to download 🥺/n<b>ඩව්න්ලොඩ් වෙන ගමන්🥰</b>"")
     if type == "audio":
         opts = {
             "format": "bestaudio",
@@ -76,7 +76,7 @@ async def download_video(v_url):
         video = False
         song = True
     try:
-        await rkp.edit("Fetching data, please wait 😉")
+        await rkp.edit("Fetching data, please wait 😉/n<b>චුට්ටක් ඉන්ඩක්කො</b>"")
         with YoutubeDL(opts) as rip:
             rip_data = rip.extract_info(url)
     except DownloadError as DE:
@@ -127,7 +127,7 @@ async def download_video(v_url):
                 )
             ],
             progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                progress(d, t, v_url, c_time, "Uploading 📤", f"{rip_data['title']}.mp3")
+                progress(d, t, v_url, c_time, "Uploading 📤/n<b>අප්ලොඩ් වෙන ගමන්</b>"", f"{rip_data['title']}.mp3")
             ),
         )
         os.remove(f"{rip_data['id']}.mp3")
@@ -143,7 +143,7 @@ async def download_video(v_url):
             supports_streaming=True,
             caption=url,
             progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                progress(d, t, v_url, c_time, "Uploading 📤", f"{rip_data['title']}.mp4")
+                progress(d, t, v_url, c_time, "Uploading 📤/n<b>අප්ලොඩ් වෙන ගමන්</b>"", f"{rip_data['title']}.mp4")
             ),
         )
         os.remove(f"{rip_data['id']}.mp4")
@@ -170,7 +170,7 @@ async def download_video(v_url):
     except:
         return await rkp.edit("`failed to find`")
     type = "audio"
-    await rkp.edit("Preparing to download 😌")
+    await rkp.edit("Preparing to download 😌/n<b>ඩව්න්ලොඩ් වෙන ගමන්</b>"")
     if type == "audio":
         opts = {
             "format": "best",
@@ -189,7 +189,7 @@ async def download_video(v_url):
         song = False
         video = True
     try:
-        await rkp.edit("Fetching data, please wait 😉")
+        await rkp.edit("Fetching data, please wait 😉/n<b>ටිකක් ඉන්ඩකෝ</b>"")
         with YoutubeDL(opts) as rip:
             rip_data = rip.extract_info(url)
     except DownloadError as DE:
@@ -274,4 +274,4 @@ __help__ = """
  • `/lyrics <song name>`*:* provides the lyrics of the song you want.
 """
 
-__mod_name__ = "Songs 🎵"
+__mod_name__ = "Songs 😌"
