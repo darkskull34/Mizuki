@@ -1,9 +1,10 @@
 
-__help__ = 
+__help__ = """
 
 • `{i}whichsong`
    Reply to a song file, to recognise the song.
 """
+__mod_name__ = "Wichsong"
 
 from os import remove
 
