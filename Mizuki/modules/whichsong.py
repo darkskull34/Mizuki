@@ -1,5 +1,5 @@
 
-_help_
+__help__ = 
 
 • `{i}whichsong`
    Reply to a song file, to recognise the song.
