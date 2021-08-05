@@ -205,7 +205,11 @@ def start(update: Update, context: CallbackContext):
             first_name = update.effective_user.first_name
             update.effective_message.reply_sticker(
                 SAITAMA_IMG,
-                PM_START_TEXT,
+                update.effective_message.reply_photo(
+                SAITAMA_IMG,
+                PM_START_TEXT.format(
+                    escape_markdown(first_name), escape_markdown(context.bot.first_name)
+                ),
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
