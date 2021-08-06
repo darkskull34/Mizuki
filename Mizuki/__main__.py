@@ -222,7 +222,9 @@ def start(update: Update, context: CallbackContext):
                             )
                         ],
                         [
-                            InlineKeyboardButton(text="Back"
+                            InlineKeyboardButton(
+            text="Back"
+  url="https;//google.com",
                             ),
                             InlineKeyboardButton(
                                 text="📌 Updates Channel",
