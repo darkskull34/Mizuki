@@ -223,7 +223,7 @@ first_name = update.effective_user.first_name
                         [
                             InlineKeyboardButton(
                                 text="👥 Support Group",
-                              callback_data="help_back" ,
+                                url="https://t.me/Infinity_BOTs",
                             ),
                             InlineKeyboardButton(
                                 text="📌 Updates Channel",
