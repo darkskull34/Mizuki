@@ -201,7 +201,8 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            first_name = update.effective_user.first_name
+          update.effective_message.reply_sticker( CAACAgEAAxkBAAIeSGELTx2IPwLHPV_aGClOIh2bVzdTAALjAANRKQ05F6bHecKQ5JseBA ),
+first_name = update.effective_user.first_name
             update.effective_message.reply_text(
                 
                 text= PM_START_TEXT.format(
