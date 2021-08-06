@@ -76,16 +76,16 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 _settings = [
     [
-        Button.inline("API Kᴇʏs", data="apiset"),
-        Button.inline("Pᴍ Bᴏᴛ", data="chatbot"),
+        Button.inline("API Kᴇʏs", data=""),
+        Button.inline("Pᴍ Bᴏᴛ", data=""),
     ],
     [
-        Button.inline("Aʟɪᴠᴇ", data="alvcstm"),
-        Button.inline("PᴍPᴇʀᴍɪᴛ", data="ppmset"),
+        Button.inline("Aʟɪᴠᴇ", data=""),
+        Button.inline("PᴍPᴇʀᴍɪᴛ", data=""),
     ],
-    [Button.inline("Fᴇᴀᴛᴜʀᴇs", data="otvars")],
-    [Button.inline("VC Sᴏɴɢ Bᴏᴛ", data="vcb")],
-    [Button.inline("« Bᴀᴄᴋ", data="mainmenu")],
+    [Button.inline("Fᴇᴀᴛᴜʀᴇs", data="")],
+    [Button.inline("VC Sᴏɴɢ Bᴏᴛ", data="")],
+    [Button.inline("« Bᴀᴄᴋ", data="")],
 ]
 
 
@@ -235,7 +235,7 @@ def start(update: Update, context: CallbackContext):
                             )
                         ],
                         [
-                            Button.inline("Sᴇᴛᴛɪɴɢs ⚙️", data="setter"
+                            InlineKeyboardButton(text="Sᴇᴛᴛɪɴɢs ⚙️", data="setter",
                             ),
                             InlineKeyboardButton(
                                 text="📌 Updates Channel",
