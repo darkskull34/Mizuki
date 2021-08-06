@@ -74,19 +74,6 @@ def get_readable_time(seconds: int) -> str:
     ping_time += ":".join(time_list)
 
     return ping_time
-_settings = [
-    [
-        Button.inline("API Kᴇʏs", data=""),
-        Button.inline("Pᴍ Bᴏᴛ", data=""),
-    ],
-    [
-        Button.inline("Aʟɪᴠᴇ", data=""),
-        Button.inline("PᴍPᴇʀᴍɪᴛ", data=""),
-    ],
-    [Button.inline("Fᴇᴀᴛᴜʀᴇs", data="")],
-    [Button.inline("VC Sᴏɴɢ Bᴏᴛ", data="")],
-    [Button.inline("« Bᴀᴄᴋ", data="")],
-]
 
 
 PM_START_TEXT = "Hi {}, my name is {} 👸\n\nI'm a next gen powerful group manager bot. Made by [SUPUN 🇱🇰](t.me/Tikka_bro)\n\nHit /help to find my list of available commands"
@@ -235,7 +222,7 @@ def start(update: Update, context: CallbackContext):
                             )
                         ],
                         [
-                            InlineKeyboardButton(text="Sᴇᴛᴛɪɴɢs ⚙️", data="setter",
+                            InlineKeyboardButton(text="Back", callback_data="sett"
                             ),
                             InlineKeyboardButton(
                                 text="📌 Updates Channel",
@@ -461,7 +448,10 @@ def send_settings(chat_id, user_id, user=False):
                 "in a group chat you're admin in to find its current settings!",
                 parse_mode=ParseMode.MARKDOWN,
             )
-
+@run_async
+def sett(update: Update, context: CallbackContext):
+update.effective_message.reply_text(
+text = "Hey" )
 
 @run_async
 def settings_button(update: Update, context: CallbackContext):
