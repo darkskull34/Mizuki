@@ -201,7 +201,7 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-          update.effective_message.reply_sticker(EZTee),
+          
 first_name = update.effective_user.first_name
             update.effective_message.reply_text(
                 
@@ -223,7 +223,7 @@ first_name = update.effective_user.first_name
                         [
                             InlineKeyboardButton(
                                 text="👥 Support Group",
-                                url=f"https://t.me/{SUPPORT_CHAT}",
+                              callback_data="help_back" ,
                             ),
                             InlineKeyboardButton(
                                 text="📌 Updates Channel",
