@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-EZTee= "CAACAgEAAxkBAAIeSGELTx2IPwLHPV_aGClOIh2bVzdTAALjAANRKQ05F6bHecKQ5JseBA"
+
 PM_START_TEXT = "Hi {}, my name is {} 👸\n\nI'm a next gen powerful group manager bot. Made by [SUPUN 🇱🇰](t.me/Tikka_bro)\n\nHit /help to find my list of available commands"
 
 HELP_STRINGS = """
