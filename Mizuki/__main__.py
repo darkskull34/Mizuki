@@ -95,9 +95,9 @@ I'm a group management bot, here to help you get around and keep the order in yo
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !\n",
 )
 
-SAITAMA_IMG = "CAACAgEAAxkBAAIeSGELTx2IPwLHPV_aGClOIh2bVzdTAALjAANRKQ05F6bHecKQ5JseBA"
+SAITAMA_IMG = "https://telegra.ph/file/af86973849bc43cc8e3ce.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate for developer. This bot runs on heroku so bot slow down some times and developer cannot add more modules due to heroku can't run them.\n\nBetter if my developer recieved a VPS to run the bot. Contact him and help him to continue this.\n\nDeveloper: [@Tikka_bro](t.me/tikka_bro)"""
+DONATE_STRING = """Heya, glad to hear you want to donate for developer. This bot runs on heroku so bot slow down some times and developer cannot add more modules due to heroku can't run them.\n\nBetter if my developer recieved a VPS to run the bot. Contact him and help him to continue this.\n\nDeveloper: [@ImJanindu](t.me/imjanindu)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -203,9 +203,8 @@ def start(update: Update, context: CallbackContext):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_sticker ( 
+            update.effective_message.reply_photo(
                 SAITAMA_IMG,
-                
                 PM_START_TEXT.format(
                     escape_markdown(first_name), escape_markdown(context.bot.first_name)
                 ),
@@ -215,7 +214,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="➕ Add Ez.Tee to your Group",
+                                text="➕ Add Kawee to your Group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -223,12 +222,12 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-            text="Back"
-  url="https;//google.com",
+                                text="👥 Support Group",
+                                url=f"https://t.me/{SUPPORT_CHAT}",
                             ),
                             InlineKeyboardButton(
                                 text="📌 Updates Channel",
-                                url="https://t.me/eztee_youtube",
+                                url="https://t.me/Infinity_BOTs",
                             ),
                         ],
                         [
@@ -241,12 +240,11 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "ඇහරිල ඉන්නෙ😌!\n<b>නිදාගත්තෙ නෑ</b> <code>{}</code> <b>කින්.</b>".format(
+            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
         )
-
 
 
 # for test purposes
@@ -443,6 +441,7 @@ def send_settings(chat_id, user_id, user=False):
                 "in a group chat you're admin in to find its current settings!",
                 parse_mode=ParseMode.MARKDOWN,
             )
+
 
 @run_async
 def settings_button(update: Update, context: CallbackContext):
