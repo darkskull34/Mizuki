@@ -74,6 +74,19 @@ def get_readable_time(seconds: int) -> str:
     ping_time += ":".join(time_list)
 
     return ping_time
+_settings = [
+    [
+        Button.inline("API Kᴇʏs", data="apiset"),
+        Button.inline("Pᴍ Bᴏᴛ", data="chatbot"),
+    ],
+    [
+        Button.inline("Aʟɪᴠᴇ", data="alvcstm"),
+        Button.inline("PᴍPᴇʀᴍɪᴛ", data="ppmset"),
+    ],
+    [Button.inline("Fᴇᴀᴛᴜʀᴇs", data="otvars")],
+    [Button.inline("VC Sᴏɴɢ Bᴏᴛ", data="vcb")],
+    [Button.inline("« Bᴀᴄᴋ", data="mainmenu")],
+]
 
 
 PM_START_TEXT = "Hi {}, my name is {} 👸\n\nI'm a next gen powerful group manager bot. Made by [SUPUN 🇱🇰](t.me/Tikka_bro)\n\nHit /help to find my list of available commands"
@@ -222,9 +235,7 @@ def start(update: Update, context: CallbackContext):
                             )
                         ],
                         [
-                            InlineKeyboardButton(
-                                text="👥 Support Group",
-                                url=f"https://t.me/eztee_chat",
+                            Button.inline("Sᴇᴛᴛɪɴɢs ⚙️", data="setter"
                             ),
                             InlineKeyboardButton(
                                 text="📌 Updates Channel",
@@ -246,6 +257,14 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
         )
+
+@callback("setter")
+@owner
+async def setting(event):
+    await event.edit(
+        "Choose from the below options -",
+        buttons=_settings,
+    )
 
 
 # for test purposes
