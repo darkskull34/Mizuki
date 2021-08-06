@@ -245,13 +245,6 @@ def start(update: Update, context: CallbackContext):
             parse_mode=ParseMode.HTML,
         )
 
-@callback("setter")
-@owner
-async def setting(event):
-    await event.edit(
-        "Choose from the below options -",
-        buttons=_settings,
-    )
 
 
 # for test purposes
