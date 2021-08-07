@@ -75,6 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
+SAITAMA_IMG = "https://telegra.ph/file/af86973849bc43cc8e3ce.jpg"
 
 PM_START_TEXT = "Hi {}, my name is {} 👸\n\nI'm a next gen powerful group manager bot. Made by [SUPUN 🇱🇰](t.me/Tikka_bro)\n\nHit /help to find my list of available commands"
 
@@ -199,13 +200,11 @@ def start(update: Update, context: CallbackContext):
 
             elif args[0][1:].isdigit() and "rules" in IMPORTED:
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
-
-        else:
-          
-first_name = update.effective_user.first_name
-            update.effective_message.reply_text(
-                
-                text= PM_START_TEXT.format(
+         else:
+            first_name = update.effective_user.first_name
+            update.effective_message.reply_photo(
+                SAITAMA_IMG,
+                PM_START_TEXT.format(
                     escape_markdown(first_name), escape_markdown(context.bot.first_name)
                 ),
                 parse_mode=ParseMode.MARKDOWN,
@@ -223,7 +222,7 @@ first_name = update.effective_user.first_name
                         [
                             InlineKeyboardButton(
                                 text="👥 Support Group",
-                                url="https://t.me/Infinity_BOTs",
+                                url=f"https://t.me/{SUPPORT_CHAT}",
                             ),
                             InlineKeyboardButton(
                                 text="📌 Updates Channel",
