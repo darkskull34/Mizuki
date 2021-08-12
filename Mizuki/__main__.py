@@ -225,7 +225,7 @@ def start(update: Update, context: CallbackContext):
                         ],
                            [
                             InlineKeyboardButton(
-                                text="➕ Add EzTee to your Group",
+                                text="Add to your Group➕ ",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
