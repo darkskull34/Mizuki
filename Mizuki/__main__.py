@@ -76,17 +76,16 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = "Hi {}, my name is {} 👸\n\nI'm a next gen powerful group manager bot. Made by [SUPUN 🇱🇰](t.me/Tikka_bro)\n\nHit /help to find my list of available commands"
+PM_START_TEXT = "<b>Hey {}/n, I am {} 😌,\n\n• I'm a powerful group manager bot.👻/n• My Owner is [SUPUN 🇱🇰](t.me/Tikka_bro)😌❤❤\n\n• Send /help available commands🛠</b>"
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
+Hey 👻! My name is *{}*.
 I'm a group management bot, here to help you get around and keep the order in your groups!
 
 *Main* commands available:
- ✪ /help: PM's you this message.
- ✪ /help <module name>: PM's you info about that module.
- ✪ /donate: information on how to donate!
- ✪ /settings:
+ • /help: PM's you this message.
+ • /help <module name>: PM's you info about that module.
+ • /settings:
    ◔ in PM: will send you your settings for all supported modules.
    ◔ in a group: will redirect you to pm, with all that chat's settings.
 {}
@@ -212,28 +211,25 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [
+                   
                         [
                             InlineKeyboardButton(
-                                text="➕ Add Kawee to your Group",
+                                text="Support Group🛠",
+                                url="https://t.me/eztee_chat"
+}",
+                            ),
+                            InlineKeyboardButton(
+                                text="Updates Channel🧡",
+                                url="https://t.me/ez_tee_youtube",
+                            ),
+                        ],
+                           [
+                            InlineKeyboardButton(
+                                text="➕ Add EzTee to your Group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
                             )
-                        ],
-                        [
-                            InlineKeyboardButton(
-                                text="👥 Support Group",
-                                url=f"https://t.me/{SUPPORT_CHAT}",
-                            ),
-                            InlineKeyboardButton(
-                                text="📌 Updates Channel",
-                                url="https://t.me/Infinity_BOTs",
-                            ),
-                        ],
-                        [
-                            InlineKeyboardButton(
-                                text="🇱🇰 Developer", url="https://github.com/Ez-tee"
-                            ),
                         ],
                     ]
                 ),
