@@ -75,17 +75,16 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-PM_START_TEXT = "<b>Hey {},</b>/n<b>I am {} 😌,</b>\n\n<b>• I'm a powerful group manager bot.👻</b>/n<b>• My Owner is [SUPUN 🇱🇰](t.me/Tikka_bro)😌❤❤</b>\n\n<b>• Send /help available commands🛠</b>"
+PM_START_TEXT = "*Hey {},*\n*I am {} 😌,*\n\n*• I'm a powerful group manager bot.👻*\n*• My Owner is [SUPUN 🇱🇰](t.me/Tikka_bro)😌❤❤*\n*• Send /help available commands🛠*"
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
+Hey 👻! My name is *{}*.
 I'm a group management bot, here to help you get around and keep the order in your groups!
 
 *Main* commands available:
- ✪ /help: PM's you this message.
- ✪ /help <module name>: PM's you info about that module.
- ✪ /donate: information on how to donate!
- ✪ /settings:
+ • /help: PM's you this message.
+ • /help <module name>: PM's you info about that module.
+ • /settings:
    ◔ in PM: will send you your settings for all supported modules.
    ◔ in a group: will redirect you to pm, with all that chat's settings.
 {}
