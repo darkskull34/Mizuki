@@ -209,28 +209,33 @@ def start(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [
-                        
+[
+                            InlineKeyboardButton(
+                                text="Add to your Group➕",
+                                url="t.me/{}?startgroup=true".format(
+                                    context.bot.username
+                                ),
+                            )
+                        ],
                         [
                             InlineKeyboardButton(
                                 text="Support Group🧡",
                                 url=f"https://t.me/eztee_chat",
                             ),
                             InlineKeyboardButton(
-                                text="Updates Channel🛠",
+                                text="📌 Updates Channel",
                                 url="https://t.me/ez_tee_youtube",
                             ),
                         ],
                         [
-                          text="Add to your Group➕",
-                                url="t.me/{}?startgroup=true".format(
-                                    context.bot.username
-                                ),
-),
+                            InlineKeyboardButton(
+                                text="🇱🇰 Developer", url="https://github.com/Ez-tee"
+                            ),
                         ],
                     ]
                 ),
             )
+                    
     else:
         update.effective_message.reply_text(
             "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
@@ -238,6 +243,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
         )
+
 
 
 # for test purposes
