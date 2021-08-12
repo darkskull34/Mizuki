@@ -215,8 +215,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="Support Group🛠",
-                                url="https://t.me/eztee_chat"
-}",
+                                url="https://t.me/eztee_chat",
                             ),
                             InlineKeyboardButton(
                                 text="Updates Channel🧡",
@@ -224,12 +223,11 @@ def start(update: Update, context: CallbackContext):
                             ),
                         ],
                            [
+                            [
                             InlineKeyboardButton(
-                                text="Add to your Group➕ ",
-                                url="t.me/{}?startgroup=true".format(
-                                    context.bot.username
-                                ),
-                            )
+                                text="🇱🇰 Developer"
+                          url="t.me/eztee_bot?startgroup=true",
+                            ),
                         ],
                     ]
                 ),
