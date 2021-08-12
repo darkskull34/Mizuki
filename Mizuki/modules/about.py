@@ -1,16 +1,13 @@
 __help__ = """
-*Mizuki - A Powerful Telegram Group Manager 🎶
 
-Powerful Abilities*
+*EZTee*
+★A Group management Bot★
 
-• Group Voice Chat Music Play ❤
+• Song Downloader 🎶
+• Youtube Downloader 💯
+• URL Uploader 📥
 
-• File To Link and URL Upload 📂
+Owner @Tikka_bro 🇱🇰
+Our Channel @ez_tee_youtube"""
 
-• Youtube Downloader 🎵
-
-Developer @ImJanindu 🇱🇰
-
-Github [ImJanindu](https://github.com/ImJanindu)"""
-
-__mod_name__ = "About 🇱🇰"
+__mod_name__ = "🧡EzTee"
