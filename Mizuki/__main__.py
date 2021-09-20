@@ -221,16 +221,16 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="Support Group🧡",
-                                url=f"https://t.me/eztee_chat",
+                                url=f"t.me/hellboysupportgroup",
                             ),
                             InlineKeyboardButton(
                                 text="📌 Updates Channel",
-                                url="https://t.me/ez_tee_youtube",
+                                url="https://www.youtube.com/channel/UCJmPdyfFnsmt5CbIETVH-SQ",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🇱🇰 Developer", url="https://github.com/Ez-tee"
+                                text="🇱🇰 Developer", url="https://github.com/Cyber01warriors"
                             ),
                         ],
                     ]
