@@ -224,7 +224,7 @@ def start(update: Update, context: CallbackContext):
                                 url=f"t.me/hellboysupportgroup",
                             ),
                             InlineKeyboardButton(
-                                text="📌 Updates Channel",
+                                text="📌 Youtube Channel",
                                 url="https://www.youtube.com/channel/UCJmPdyfFnsmt5CbIETVH-SQ",
                             ),
                         ],
