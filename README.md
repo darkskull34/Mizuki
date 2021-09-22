@@ -1,4 +1,4 @@
-![Mizuki](https://telegra.ph/file/ad844f63a0dc334282898.jpg)
+![Mizuki](https://telegra.ph/file/fe96c41103b970c58b61b.jpg)
 # OLD Mizuki Bot
 
 A Telegram Python bot running on python3 forked with saitama with a sqlalchemy database and an entirely themed persona to make fun and good management for you in your groups.
