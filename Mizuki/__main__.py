@@ -93,9 +93,9 @@ I'm a group management bot, here to help you get around and keep the order in yo
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !\n",
 )
 
-SAITAMA_IMG = "https://telegra.ph/file/5e8faeeb8c7c0e7f9be5e.mp4"
+SAITAMA_IMG = "https://telegra.ph/file/376c990f492a843ffc456.mp4"
 
-DONATE_STRING = """Heya, glad to hear you want to donate for developer. This bot runs on heroku so bot slow down some times and developer cannot add more modules due to heroku can't run them.\n\nBetter if my developer recieved a VPS to run the bot. Contact him and help him to continue this.\n\nDeveloper: [@Cyber01_Warriors](t.me/Cyber01_Warriors)"""
+DONATE_STRING = """Heya, glad to hear you want to donate for developer. This bot runs on heroku so bot slow down some times and developer cannot add more modules due to heroku can't run them.\n\nBetter if my developer recieved a VPS to run the bot. Contact him and help him to continue this.\n\nDeveloper: [@A_l_O_N_F_O_R_E_V_E_R](t.me/A_l_O_N_F_O_R_E_V_E_R)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -230,7 +230,7 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🇱🇰 Developer", url="https://github.com/Cyber01warriors"
+                                text="🇱🇰 Developer", url="https://github.com/darkskull34"
                             ),
                         ],
                     ]
